@@ -9,7 +9,7 @@ func Accum(s string) string {
 	var list []string
 	//var temp string
 	s = strings.ToLower(s)
-	splitString := strings.SplitN(s, "", len(s))
+	splitString := strings.Split(s, "")
 	for i, value := range splitString {
 		//temp = strings.ToUpper(value) + strings.Repeat(value,i)
 
