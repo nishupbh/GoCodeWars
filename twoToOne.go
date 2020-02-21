@@ -21,7 +21,7 @@ func unique(strSlice []string) []string {
 func TwoToOne(s1 string, s2 string) string {
 
 	//s1Slice, s2Slice := unique(strings.SplitN(s1, "", len(s1))), unique(strings.SplitN(s2, "", len(s2)))
-	s1Slice := unique(strings.SplitN(s1+s2, "", len(s1+s2)))
+	s1Slice := unique(strings.Split(s1+s2, ""))
 
 	sort.Sort(sort.StringSlice(s1Slice))
 	return strings.Join(s1Slice, "")
