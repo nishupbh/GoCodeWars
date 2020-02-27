@@ -6,7 +6,7 @@ func LetterChanges(str string) string {
 
 	// code goes here
 	strToByte := []byte(str)
-	for i := 0; i < len(strToByte); {
+	for i := 0; i < len(strToByte); i++ {
 		if (strToByte[i] >= 65 && strToByte[i] <= 90) || (strToByte[i] >= 97 && strToByte[i] <= 122) {
 			strToByte[i]++
 		}

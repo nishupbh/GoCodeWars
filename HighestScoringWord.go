@@ -13,13 +13,13 @@ func High(s string) string {
 		temp = 0
 		for _, strValue := range value {
 			temp += (strValue - 96)
-			fmt.Println(strValue - 96)
+			//fmt.Println(strValue - 96)
 		}
 		if highScore < temp {
 			highScore = temp
 			highScoringWord = value
 
-			fmt.Printf("High Score %v with  word %v \n", highScore, highScoringWord)
+			//fmt.Printf("High Score %v with  word %v \n", highScore, highScoringWord)
 		}
 	}
 	return highScoringWord
