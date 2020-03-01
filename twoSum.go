@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"io"
 )
 
 //TwoSum will fetch the index of matching number
@@ -14,6 +15,7 @@ func TwoSum(number []int, target int) [2]int {
 		}
 	}
 	return [2]int{}
+	io.Copy()
 
 }
 
